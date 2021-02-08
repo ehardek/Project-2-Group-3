@@ -32,8 +32,19 @@ hr{
 }
 
 
+.card{
+    background-color:rgba(0, 0, 0, 0);
+
+}
+
+.card a{
+    background-color:rgba(0, 0, 0, 0);
+ 
+}  
+ 
 
 /* ---------------------------------- */
+
 .wrapper {
     width: 100%;
     table-layout: fixed;

@@ -23,7 +23,7 @@ function renderSong(data) {
 
 }
 
-    console.log("setting submit handler");
+    console.log("setting submit handler for genre form");
     // - - -  - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - 
     $("#form1").on("submit", function(event){
         console.log("handling submit event");
@@ -39,6 +39,26 @@ function renderSong(data) {
             renderSong
         );
     });
+
+
+
+
+    $("#song-form").on("submit", function(event){
+        console.log("handling song-form submit event");
+        event.preventDefault();
+
+       /* Get values from form, as with genre dropdown 
+       let selectedGenre =  $("#genre-dropdown").val();
+       */
+        $.ajax("/api/songs/" + selectedGenre, {
+            type: "GET",
+
+            data: selectedGenre    
+        }).then(
+            /* send */
+        );
+    });
+    
 
 
 }); 
