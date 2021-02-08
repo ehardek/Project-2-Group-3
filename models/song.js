@@ -32,15 +32,13 @@ module.exports = function (sequelize, DataTypes) {
             },
         },
 
+        genre: {
+            type: DataTypes.STRING,
+            allowNull: false
+        }
+
     });
 
-    Songs.associate = (models) => {
-        Songs.belongsTo(models.Playlist, {
-            foreignKey: {
-                allowNull: false,
-            },
-        });
-    };
-
     return Songs;
+    
 };

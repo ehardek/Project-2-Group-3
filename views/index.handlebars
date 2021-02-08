@@ -7,6 +7,19 @@
 
                 <tr>
                     <td>
+<!-- HEAD  IN MAIN-HBS ------------- -->
+    
+    <main id="center" class="wrapper">
+        <div class="inside-wrapper">
+            <table class="outer" align="center">
+
+
+
+                <!--  MAIN ROW 1 of 3 (contains table) ------------------ -->
+                <tr>
+                    <td>
+
+                        <!--   ------------------ -->
                         <table width="100%">
                             <tr>
                                 <td style="background-color:#A62508;padding:10px;text-align: center;">
@@ -18,6 +31,12 @@
                     </td>
                 </tr>
 
+                        <!-- ------------------ -->
+                    </td>
+                </tr>
+                 <!-- END: MAIN ROW  1 of 3  ------------------ -->
+
+                 <!--    MAIN ROW 2 of 3 (Contains "inside inbox" and "outside comfort zone")------------------ -->
                 <tr>
                     <td style="background-image:url('https://images.unsplash.com/photo-1473396413399-6717ef7c4093?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
                         background-size:600px;text-align:center;">
@@ -48,3 +67,55 @@
     </center>
 
 </body>
+         
+            </table>
+                 <!--  END: MAIN ROW 2 of 3 ------------------ -->
+
+                                        <!-- remove post method if using AJAX or Fetch APIs-->
+                <form action="/api/signup" method="post" id="signup" class="search-form">
+                    <div>
+                    <b>Enter username: </b>
+                        <input type="text" name="user_name" placeholder="your name"> </input>
+                      <b>Enter email: </b>
+                       <input type="text"name="email" required="required" placeholder="your email"> </input>
+                    </div>
+                    <button type="submit">Sign up</button> 
+                </form>
+
+                <!--  MAIN ROW 3 of 3 (ROW WHERE PLAYLIST ELEMENTS  RENDER)------------------ -->
+                <form action="/api/songs/genre"  id="form1" class="search-form">
+                    <div>
+                        <div style="background:#D9CECC;border:2px solid #2a2a2a;">
+                        <p style="text-align:center;"> Your playlist: </p>
+                        
+                        <!-- --------------------------- -->
+                        
+                        <div id="search-area">
+                            <label>Filter by genre </label>
+                            <select id="genre-dropdown" name="genre">
+                                <option value="alternative" selected="selected">
+                                    Alternative
+                                </option>
+                                <option value="Rap">Rap</option>
+                                <option value="Rock">Rock</option>
+                            </select>
+                            <button type="submit" id="search-submit">Update playlist</button> 
+                        </div>             
+                            <div id="result-area">
+                            <!-- --------------------------- -->
+                                <ul>  
+                                    {{#each songs }}
+                                    
+                                        {{> songs/song }}  
+                                    
+                                    {{/each}}
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END:  ROW WHERE PLAYLIST ELEMENTS WILL RENDER ------------------ -->
+
+        </div> 
+    </main>  <!-- end ".wrapper"  --> 
