@@ -17,6 +17,9 @@
                 </table>
             </section> <!-- End 'app-logo-section' --> 
 
+             <!-- temporary notifcations will appear here --> 
+            <div display="none;" class="off" id="green-noti">  </div>
+
             <!--  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- -->
             <!--  Main section with contol -->
             <section id="user-form-input-section">
@@ -63,7 +66,7 @@
                         <div class="card-header" id="accordion-heading-two">
                             <h5 class="mb-0">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#expandable-two" aria-expanded="false" aria-controls="expandable-two">
-                              🡾  Option 2: Make a genre playlist (Filter playlist to specific genre type)
+                              🡾  Option 2: Make a genre playlist (Filter by genre)
                                 </button>
                             </h5>
                         </div>
@@ -126,6 +129,7 @@
             <!--  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- -->
 
             <section id="playlist-render-section">
+              <div id="link-note"><b> Click song or artist name to find related merch on Amazon</b></div>
                 <form>
                     <div style="background:#D9CECC;border:2px solid #2a2a2a;">
                         <p style="text-align:center;"> Your playlist: </p>
