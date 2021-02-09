@@ -125,8 +125,8 @@ function renderSong(data) {
 
 	for(let i = 0; i < combinedArr.length; i++){
 		let urlTxt = combinedArr[i];
-		let newSongHTML = `<a href="https://www.amazon.com/s?k=${urlTxt}" target="_blank">${songTrimArr[i].replace("+"," ")}</a>`;
-        let newArtistHTML = `<a href="https://www.amazon.com/s?k=${urlTxt}" target="_blank">${artistTrimArr[i]}</a>`;
+		let newSongHTML = `<a  class="song-name" href="https://www.amazon.com/s?k=${urlTxt}" target="_blank">${songTrimArr[i].replace("+"," ")}</a>`;
+        let newArtistHTML = `<a class="artist-name" href="https://www.amazon.com/s?k=${urlTxt}" target="_blank">${artistTrimArr[i].replace("+"," ")}</a>`;
 		songNames[i].outerHTML = newSongHTML;
         artistNames[i].outerHTML = newArtistHTML;
 	}
