@@ -1,12 +1,10 @@
-<!-- HEAD  IN MAIN-HBS ------------- -->
-    
+<div class="container">
     <main id="center" class="wrapper">
         <div class="inside-wrapper">
             <!--  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- -->
             <section id="app-logo-section">
                 <table class="outer" align="center">
-                    <tr>
-                        <td>
+                   
                             <table width="100%">
                                 <tr>
                                     <td style="background-color:#A62508;padding:10px;text-align: center;">
@@ -15,21 +13,7 @@
                                     </td>
                                 </tr>
                             </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="background-image:url('https://images.unsplash.com/photo-1473396413399-6717ef7c4093?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
-                            background-size:600px;text-align:center;">
-                            <p style="color:#D9CECC;margin-top:100px;background: #110000;width:400px;margin-left: auto;">
-                            Inside your inbox
-                            </p>
-                            <br>
-                            <p style="color:#D9CECC;background: #110000;width:400px;margin-right: auto;">
-                            Outside your comfort zone
-                            </p>    
-                            
-                        </td>
-                    </tr>
+                    
                 </table>
             </section> <!-- End 'app-logo-section' --> 
 
@@ -47,20 +31,23 @@
                         </div>
                         <div id="expandable-one" class="collapse show" aria-labelledby="accordion-heading-one" data-parent="#USER-INPUT-FORMS-ACCORDION">
                         <div class="card-body">
+
                             <!-- accrdn-content --> 
-                                <form action="/api/song" method="post" id="song-form" class="user-form">
-                                    <div>
-                                        <b>Song name: </b>
-                                            <input type="text" name="song_name" required="" placeholder="name of song"> </input>
-                                        <b>Arist name: </b>
-                                            <input type="text"name="artist" required="" placeholder="name of artist"> </input>
-                                        <b>Album name: </b>
-                                            <input type="text"name="album" required="" placeholder="if song was released on an album"> </input> <!-- Should validate: max 4 digits. digits only -->
-                                        <b>Release year: </b>
-                                            <input type="number"name="year" required="" placeholder="year this song was released"> </input>
-                                        <b>Genre: </b>
-                                            <input type="number"name="genre" required="" placeholder="song genre"> </input>
-                                        <button type="submit">Add song</button> 
+                                 <form  id="song-form" class="user-form">
+                                    <div class="">
+                                        <ul class="" id="song-form-list">
+                                            <li>Song name: </li>
+                                                  <input type="text" id="song_name" name="song_name" required="" placeholder="name of song"> </input>
+                                            <li>Artist name: </li>
+                                                 <input type="text" id="artist" name="artist" required="" placeholder="name of artist"> </input>
+                                            <li>Album name: </li>
+                                                 <input type="text" id="album" name="album" required="" placeholder="if song was released on an album"> </input> <!-- Should validate: max 4 digits. digits only -->
+                                            <li>Release year: </li>
+                                            <input type="number"id="year" name="year" required="" placeholder="year this song was released"> </input>
+                                            <li>Genre: </li>
+                                               <input type="text" id="genre" name="genre" required="" placeholder="song genre"> </input>
+                                            <button type="submit">Add song</button> 
+                                        </ul>
                                     </div>
                                 </form>
                             <!-- /accrdn-collapsible-content --> 
@@ -119,10 +106,12 @@
                         
                                 <form action="/api/signup" method="post" id="signup" class="search-form">
                                     <div>
-                                        <b>Enter a username: </b>
-                                            <input type="text" name="user_name" placeholder="your name"> </input>
-                                        <b>Enter email: </b>
-                                        <input type="text"name="email" required="required" placeholder="your email"> </input>
+                                        <li>
+                                            <ul>Enter a username: </ul>
+                                                <input type="text" name="user_name" placeholder="your name"> </input>
+                                            <ul>Enter email: </ul>
+                                            <input type="text"name="email" required="required" placeholder="your email"> </input>
+                                        </li>
                                     </div>
                                     <button type="submit">Sign up</button> 
                                 </form>
@@ -154,3 +143,4 @@
             <!--  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- -->
         </div> 
     </main>  <!-- end ".wrapper"  --> 
+</div>

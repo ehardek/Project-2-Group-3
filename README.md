@@ -34,12 +34,12 @@
 
   ## Credits
   - Adam Lane 
-    * email: 
-    * github: 
+    * email: alane019@gmail.com
+    * github: alane019
 
   - Thomas Whittle
-    * email:
-    * github: 
+    * email: tewhittle@gmail.com
+    * github: settc
 
   - Evan Hardek
     * email: 

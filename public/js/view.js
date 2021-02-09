@@ -44,21 +44,35 @@ function renderSong(data) {
 
 
     $("#song-form").on("submit", function(event){
+        event.preventDefault();
+
         console.log("handling song-form submit event");
         event.preventDefault();
 
-       /* Get values from form, as with genre dropdown 
-       let selectedGenre =  $("#genre-dropdown").val();
-       */
-        $.ajax("/api/songs/" + selectedGenre, {
-            type: "GET",
 
-            data: selectedGenre    
+        let song_name = $("#song_name").val().trim();
+        let  artist = $("#artist").val().trim();
+        let  album = $("#album").val().trim();
+        let  genre = $("#genre").val().trim();
+        let  year = $("#year").val().trim();
+
+
+        let songDataObject = {
+            "song_name": song_name,
+            "artist": artist,
+            "album": album,
+            "year": year,
+            "genre": genre
+        }
+
+        $.ajax("/api/song", {
+            type: "POST",
+            data: songDataObject
         }).then(
-            /* send */
+           console.log("( ajax request was sent )")
+           // window.location.reload();
         );
-    });
+    });   
     
-
 
 }); 
