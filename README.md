@@ -3,6 +3,9 @@
   ## Description
   This application will generate music playlists for the user based on genre. The user can submit their email and username to recieve a playlist they select. 
 
+  ![Demo1](./public/img/demo1.jpg)
+  ![Demo2](./public/img/demo2.jpg)
+
   # Table of Contents
   * [Installation](#installation)
   * [Credits](#credits)
