@@ -42,8 +42,8 @@
     * github: settc
 
   - Evan Hardek
-    * email: 
-    * github: 
+    * email: evanhardek@gmail.com
+    * github: ehardek
 
   - Jordan Stuckman 
     * email: jordanks93@gmail.com
