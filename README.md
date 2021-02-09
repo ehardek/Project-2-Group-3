@@ -17,7 +17,7 @@
   * MySQL Workbench 
 
   ### Link to live application host on heroku:
-  ![Heroku App Link](https://email-playlist.herokuapp.com/)
+  [Heroku App Link](https://email-playlist.herokuapp.com/)
 
   ## To Run the application locally:
   1. Clone the repo from github
