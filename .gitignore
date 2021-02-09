@@ -1,5 +1,5 @@
 app-env
-mailgun-env.env
+mg.js
 
 
 #github's standard gitignore for node_development gitignore https://github.com/sangwon090/gitignore/blob/master/Node.gitignore 
@@ -10,6 +10,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
