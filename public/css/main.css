@@ -4,7 +4,14 @@ body {
     background-color: #D9A796;
     font-family:'Big Shoulders Display',cursive;
     font-size: 40px;
+    align-items: center;
+    text-align: center;
 }
+
+li {
+    list-style-type: none;
+}
+
 table {
     border-spacing: 0;
 }
