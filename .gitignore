@@ -1,4 +1,5 @@
 app-env
+mailgun-env.env
 
 
 #github's standard gitignore for node_development gitignore https://github.com/sangwon090/gitignore/blob/master/Node.gitignore 
